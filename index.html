@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zwara Food Landing</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome for social icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="assets/Zwara-logo.png" alt="Zwara Logo" />
+      </div>
+      <nav class="nav-links">
+        <a href="#"
+          ><img src="assets/influencer.png" alt="influencer" /> Influencer</a
+        >
+        <a href="#"
+          ><img src="assets/favourite.png" alt="favourite" /> Favourite</a
+        >
+        <a href="#"><img src="assets/cart.png" alt="cart" /> Cart</a>
+        <a href="#"><img src="assets/globe.jpg" alt="location" /> العربية</a>
+        <button class="login-btn">
+          <img src="assets/user.png" alt="" />Sign up / Log in
+        </button>
+      </nav>
+
+      <!-- Hamburger icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="assets/hero-image-1.png" alt="Food Left" class="food-left" />
+      <img src="assets/hero-image-2.png" alt="Food Right" class="food-right" />
+
+      <div class="hero-content">
+        <h1>Order delicious food from your<br />favorite restaurants.</h1>
+        <div class="search-boxes">
+          <div class="location">
+            <img
+              src="assets/locate.png"
+              alt="Location"
+              width="18"
+              height="18"
+            />
+            Kuwait City, Kuwait
+          </div>
+
+          <div class="search">
+            <img
+              src="assets/search-anything.png"
+              alt="Search Icon"
+              width="18"
+              height="18"
+            />
+            <input type="text" placeholder="Search Restaurant" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Restaurants Row -->
+    <section class="restaurants">
+      <p class="welcome">
+        Welcome! <span class="highlight">Let's Sugar Up!</span>
+      </p>
+
+      <div class="logos">
+        <div class="logo-item">
+          <img src="assets/mayan.png" alt="MAYAN" />
+          <p>MAYAN</p>
+        </div>
+        <div class="logo-item">
+          <img src="assets/tamra.png" alt="Tamra" />
+          <p>Tamra</p>
+        </div>
+        <div class="logo-item">
+          <img src="assets/blere.png" alt="Blere" />
+          <p>Blere</p>
+        </div>
+        <div class="logo-item">
+          <img src="assets/dgmaa.png" alt="DGMAA" />
+          <p>DGMAA</p>
+        </div>
+        <div class="logo-item">
+          <img src="assets/ward.png" alt="WARD" />
+          <p>WARD</p>
+        </div>
+        <div class="logo-item">
+          <img src="assets/oyo.png" alt="OYO" />
+          <p>OYO</p>
+        </div>
+        <div class="logo-item">
+          <img src="assets/blackeye.png" alt="BLACKEYE" />
+          <p>BLACKEYE</p>
+        </div>
+        <div class="logo-item">
+          <img src="assets/ookie.png" alt="OOKIE" />
+          <p>OOKIE</p>
+        </div>
+        <div class="logo-item">
+          <img src="assets/hive.png" alt="HIVE" />
+          <p>HIVE</p>
+        </div>
+        <div class="logo-item">
+          <img src="assets/BI.png" alt="BI" />
+          <p>BI</p>
+        </div>
+        <!-- Add more logos as per design -->
+      </div>
+    </section>
+    <section class="categories">
+      <div class="category-tabs">
+        <div class="tab">
+          <span>OFFERS</span><img src="assets/tab-offer.webp" alt="Offers" />
+        </div>
+        <div class="tab">
+          <span>NEWLY ADDED</span>
+          <img src="assets/newly-added.webp" alt="Newly Added" />
+        </div>
+        <div class="tab">
+          <span>DELIVERY</span><img src="assets/delivery.webp" alt="Delivery" />
+        </div>
+        <div class="tab">
+          <span>TRENDS</span><img src="assets/trends.webp" alt="Trends" />
+        </div>
+        <div class="tab">
+          <span>GIFTS</span><img src="assets/gifts.webp" alt="Gifts" />
+        </div>
+        <div class="tab">
+          <span>CATERING</span><img src="assets/catering.png" alt="Catering" />
+        </div>
+      </div>
+
+      <div class="food-row">
+        <div class="food-card">
+          <img src="assets/all-cousins.png" alt="All Cousins" />
+          <p>All Cousins</p>
+        </div>
+        <div class="food-card">
+          <img src="assets/cookies.png" alt="Cookies" />
+          <p>Cookies</p>
+        </div>
+        <div class="food-card">
+          <img src="assets/cheesecake.png" alt="Cheesecake" />
+          <p>Cheesecake</p>
+        </div>
+        <div class="food-card">
+          <img src="assets/waffle.png" alt="Waffle" />
+          <p>Waffle</p>
+        </div>
+        <div class="food-card">
+          <img src="assets/bakery.webp" alt="Bakery" />
+          <p>Bakery</p>
+        </div>
+        <div class="food-card">
+          <img src="assets/donut.png" alt="Donut" />
+          <p>Donut</p>
+        </div>
+        <div class="food-card">
+          <img src="assets/coffee.png" alt="Coffee" />
+          <p>Coffee</p>
+        </div>
+        <div class="food-card">
+          <img src="assets/frozen-yogurt.png" alt="Frozen Yoghurt" />
+          <p>Frozen Yoghurt</p>
+        </div>
+        <div class="food-card">
+          <img src="assets/crepe.png" alt="Crepe" />
+          <p>Crepe</p>
+        </div>
+        <div class="food-card">
+          <img src="assets/churros.png" alt="Churros" />
+          <p>Churros</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="res-section">
+      <h2>Top Restaurants Near You</h2>
+
+      <!-- Arrows -->
+      <div class="res-arrows">
+        <button class="res-arrow-btn" id="resLeftBtn"><span>&lt;</span></button>
+        <button class="res-arrow-btn" id="resRightBtn">
+          <span>&gt;</span>
+        </button>
+      </div>
+
+      <!-- Restaurant List -->
+      <div class="res-container" id="resContainer">
+        <!-- Open Restaurant -->
+        <div class="res-card">
+          <div class="res-image">
+            <img src="assets/desert-1.png" alt="Restaurant" />
+            <div class="res-heart-btn">♡</div>
+          </div>
+          <div class="res-content">
+            <div class="res-title">
+              Feeling Sugar
+              <span class="res-rating">★ 4.5</span>
+            </div>
+            <div class="res-subtitle">Chinese, Mongolian, Noodles, Soup</div>
+            <div class="res-info">
+              <span>24-34 min</span>
+              <span>1.4 km</span>
+              <span>KD 1.00</span>
+            </div>
+          </div>
+          <div class="res-discount">40% off on orders above KD 4.00</div>
+        </div>
+
+        <!-- Closed Restaurant with Preorder -->
+        <div class="res-card">
+          <div class="res-image">
+            <img src="assets/desert-1.png" alt="Restaurant" />
+            <div class="res-heart-btn">♡</div>
+            <!-- Closed Overlay -->
+            <div class="res-overlay">
+              Closed
+              <div class="preorder-badge">PREORDER FOR LATER</div>
+            </div>
+          </div>
+          <div class="res-content">
+            <div class="res-title">
+              The Bakery Blere
+              <span class="res-rating">★ 4.5</span>
+            </div>
+            <div class="res-subtitle">Chinese, Mongolian, Noodles, Soup</div>
+            <div class="res-info">
+              <span>24-34 min</span>
+              <span>1.4 km</span>
+              <span>KD 1.00</span>
+            </div>
+          </div>
+          <div class="res-discount">40% off on orders above KD 4.00</div>
+        </div>
+        <!-- Open Restaurant -->
+        <div class="res-card">
+          <div class="res-image">
+            <img src="assets/desert-1.png" alt="Restaurant" />
+            <div class="res-heart-btn">♡</div>
+          </div>
+          <div class="res-content">
+            <div class="res-title">
+              Feeling Sugar
+              <span class="res-rating">★ 4.5</span>
+            </div>
+            <div class="res-subtitle">Chinese, Mongolian, Noodles, Soup</div>
+            <div class="res-info">
+              <span>24-34 min</span>
+              <span>1.4 km</span>
+              <span>KD 1.00</span>
+            </div>
+          </div>
+          <div class="res-discount">40% off on orders above KD 4.00</div>
+        </div>
+
+        <!-- Another Open Restaurant -->
+        <div class="res-card">
+          <div class="res-image">
+            <img src="assets/desert-1.png" alt="Restaurant" />
+            <div class="res-heart-btn">♡</div>
+          </div>
+          <div class="res-content">
+            <div class="res-title">
+              Ookie Cookie
+              <span class="res-rating">★ 4.5</span>
+            </div>
+            <div class="res-subtitle">Chinese, Mongolian, Noodles, Soup</div>
+            <div class="res-info">
+              <span>24-34 min</span>
+              <span>1.4 km</span>
+              <span>KD 1.00</span>
+            </div>
+          </div>
+          <div class="res-discount">40% off on orders above KD 4.00</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offers-section">
+      <!-- Left Button -->
+      <button class="nav-btn left" onclick="slideOffers(-1)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+        </svg>
+      </button>
+
+      <!-- Offers Wrapper -->
+      <div class="offers-container" id="offersContainer">
+        <div class="offer-card">
+          <img src="assets/offers-1.png" alt="Offer 1" />
+          <div class="discount-badge">25% <small>OFF</small></div>
+        </div>
+        <div class="offer-card">
+          <img src="assets/offers-2.png" alt="Offer 2" />
+          <div class="discount-badge">10% <small>OFF</small></div>
+        </div>
+        <div class="offer-card">
+          <img src="assets/offers-3.png" alt="Offer 3" />
+          <div class="discount-badge">25% <small>OFF</small></div>
+        </div>
+      </div>
+
+      <!-- Right Button -->
+      <button class="nav-btn right" onclick="slideOffers(1)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+        </svg>
+      </button>
+    </section>
+
+    <section class="influencers-section">
+      <h2>Our Influencers</h2>
+
+      <!-- Arrows -->
+      <div class="arrows">
+        <button class="arrow-btn" id="leftBtn"><span>&lt;</span></button>
+        <button class="arrow-btn" id="rightBtn"><span>&gt;</span></button>
+      </div>
+
+      <!-- Influencers List -->
+      <div class="influencers-container" id="influencersContainer">
+        <div class="influencer-card">
+          <img src="assets/influencer-1.png" alt="Influencer" />
+          <div class="influencer-name">Abeer Alaityyah</div>
+        </div>
+        <div class="influencer-card">
+          <img src="assets/influencer-21.png" alt="Influencer" />
+          <div class="influencer-name">Abeer Alaityyah</div>
+        </div>
+        <div class="influencer-card">
+          <img src="assets/influencer-31.png" alt="Influencer" />
+          <div class="influencer-name">Abeer Alaityyah</div>
+        </div>
+        <div class="influencer-card">
+          <img src="assets/influencer-41.png" alt="Influencer" />
+          <div class="influencer-name">Abeer Alaityyah</div>
+        </div>
+        <div class="influencer-card">
+          <img src="assets/influencer-51.png" alt="Influencer" />
+          <div class="influencer-name">Abeer Alaityyah</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="res-section">
+      <h2>Picked For You</h2>
+
+      <!-- Arrows -->
+      <div class="res-arrows">
+        <button class="res-arrow-btn" id="resLeftBtn"><span>&lt;</span></button>
+        <button class="res-arrow-btn" id="resRightBtn">
+          <span>&gt;</span>
+        </button>
+      </div>
+
+      <!-- Restaurant List -->
+      <div class="res-container" id="resContainer">
+        <!-- Open Restaurant -->
+        <div class="res-card">
+          <div class="res-image">
+            <img src="assets/chocolat-2.jpg" alt="Restaurant" />
+            <div class="circle-image">
+              <img src="assets/sugar.png" alt="Logo" />
+            </div>
+
+            <div class="res-heart-btn">♡</div>
+          </div>
+          <div class="res-content">
+            <div class="res-title">
+              Feeling Sugar
+              <span class="res-rating">★ 4.5</span>
+            </div>
+            <div class="res-subtitle">Chinese, Mongolian, Noodles, Soup</div>
+            <div class="res-info">
+              <span>24-34 min</span>
+              <span>1.4 km</span>
+              <span>KD 1.00</span>
+            </div>
+            <span class="res-discount">40% off on orders above KD 4.00</span>
+          </div>
+        </div>
+
+        <!-- Closed Restaurant with Preorder -->
+        <div class="res-card">
+          <div class="res-image">
+            <img src="assets/chocloate-1.jpg" alt="Restaurant" />
+            <div class="circle-image">
+              <img src="assets/blere.png" alt="Logo" />
+            </div>
+            <div class="res-heart-btn">♡</div>
+            <!-- Closed Overlay -->
+            <div class="res-overlay">
+              Closed
+              <div class="preorder-badge">PREORDER FOR LATER</div>
+            </div>
+          </div>
+          <div class="res-content">
+            <div class="res-title">
+              The Bakery Blere
+              <span class="res-rating">★ 4.5</span>
+            </div>
+            <div class="res-subtitle">Chinese, Mongolian, Noodles, Soup</div>
+            <div class="res-info">
+              <span>24-34 min</span>
+              <span>1.4 km</span>
+              <span>KD 1.00</span>
+            </div>
+            <span class="res-discount">40% off on orders above KD 4.00</span>
+          </div>
+        </div>
+        <!-- Open Restaurant -->
+        <div class="res-card">
+          <div class="res-image">
+            <img src="assets/chocolat-2.jpg" alt="Restaurant" />
+            <div class="circle-image">
+              <img src="assets/BI.png" alt="Logo" />
+            </div>
+            <div class="res-heart-btn">♡</div>
+          </div>
+          <div class="res-content">
+            <div class="res-title">
+              Feeling Sugar
+              <span class="res-rating">★ 4.5</span>
+            </div>
+            <div class="res-subtitle">Chinese, Mongolian, Noodles, Soup</div>
+            <div class="res-info">
+              <span>24-34 min</span>
+              <span>1.4 km</span>
+              <span>KD 1.00</span>
+            </div>
+            <span class="res-discount">40% off on orders above KD 4.00</span>
+          </div>
+        </div>
+
+        <!-- Another Open Restaurant -->
+        <div class="res-card">
+          <div class="res-image">
+            <img src="assets/chocloate-1.jpg" alt="Restaurant" />
+            <div class="circle-image">
+              <img src="assets/ookie.png" alt="Logo" />
+            </div>
+            <div class="res-heart-btn">♡</div>
+          </div>
+          <div class="res-content">
+            <div class="res-title">
+              Ookie Cookie
+              <span class="res-rating">★ 4.5</span>
+            </div>
+            <div class="res-subtitle">Chinese, Mongolian, Noodles, Soup</div>
+            <div class="res-info">
+              <span>24-34 min</span>
+              <span>1.4 km</span>
+              <span>KD 1.00</span>
+            </div>
+            <span class="res-discount">40% off on orders above KD 4.00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chocolate-section">
+      <h2>Chocolate Lovers</h2>
+
+      <!-- Arrows -->
+      <div class="res-arrows">
+        <button class="res-arrow-btn" id="resLeftBtn"><span>&lt;</span></button>
+        <button class="res-arrow-btn" id="resRightBtn">
+          <span>&gt;</span>
+        </button>
+      </div>
+
+      <!-- Restaurant List -->
+      <div class="res-container" id="resContainer">
+        <!-- Open Restaurant -->
+        <div class="res-card">
+          <div class="res-image">
+            <img src="assets/choco-2.png" alt="Restaurant" />
+            <div class="circle-image">
+              <img src="assets/sugar.png" alt="Logo" />
+            </div>
+            <span class="choco-discount-badge">40% Discount</span>
+            <div class="res-heart-btn">♡</div>
+          </div>
+          <div class="res-content">
+            <div class="res-title">
+              OYO
+              <span class="res-rating">★ 4.5</span>
+            </div>
+            <div class="res-subtitle">Chinese, Mongolian, Noodles, Soup</div>
+            <div class="res-info">
+              <span>24-34 min</span>
+              <span>1.4 km</span>
+              <span>KD 1.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Closed Restaurant with Preorder -->
+        <div class="res-card">
+          <div class="res-image">
+            <img src="assets/choco-2.png" alt="Restaurant" />
+            <div class="circle-image">
+              <img src="assets/blere.png" alt="Logo" />
+            </div>
+            <span class="choco-discount-badge">40% Discount</span>
+            <div class="res-heart-btn">♡</div>
+          </div>
+          <div class="res-content">
+            <div class="res-title">
+              Hive - Russian Honey
+              <span class="res-rating">★ 4.5</span>
+            </div>
+            <div class="res-subtitle">Chinese, Mongolian, Noodles, Soup</div>
+            <div class="res-info">
+              <span>24-34 min</span>
+              <span>1.4 km</span>
+              <span>KD 1.00</span>
+            </div>
+          </div>
+        </div>
+        <!-- Open Restaurant -->
+        <div class="res-card">
+          <div class="res-image">
+            <img src="assets/choco-2.png" alt="Restaurant" />
+            <div class="circle-image">
+              <img src="assets/tamra.png" alt="Logo" />
+            </div>
+            <span class="choco-discount-badge">40% Discount</span>
+            <div class="res-heart-btn">♡</div>
+          </div>
+          <div class="res-content">
+            <div class="res-title">
+              Ookie Cookie
+              <span class="res-rating">★ 4.5</span>
+            </div>
+            <div class="res-subtitle">Chinese, Mongolian, Noodles, Soup</div>
+            <div class="res-info">
+              <span>24-34 min</span>
+              <span>1.4 km</span>
+              <span>KD 1.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Another Open Restaurant -->
+        <div class="res-card">
+          <div class="res-image">
+            <img src="assets/choco-2.png" alt="Restaurant" />
+            <div class="circle-image">
+              <img src="assets/sugar.png" alt="Logo" />
+            </div>
+            <span class="choco-discount-badge">40% Discount</span>
+            <div class="res-heart-btn">♡</div>
+          </div>
+          <div class="res-content">
+            <div class="res-title">
+              Feeling Sugar
+              <span class="res-rating">★ 4.5</span>
+            </div>
+            <div class="res-subtitle">Chinese, Mongolian, Noodles, Soup</div>
+            <div class="res-info">
+              <span>24-34 min</span>
+              <span>1.4 km</span>
+              <span>KD 1.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="res-section">
+      <h2>Delicious Deals</h2>
+
+      <!-- Arrows -->
+      <div class="res-arrows">
+        <button class="res-arrow-btn" id="resLeftBtn"><span>&lt;</span></button>
+        <button class="res-arrow-btn" id="resRightBtn">
+          <span>&gt;</span>
+        </button>
+      </div>
+
+      <!-- Restaurant List -->
+      <div class="res-container" id="resContainer">
+        <!-- Open Restaurant -->
+        <div class="res-card">
+          <div class="res-image">
+            <img src="assets/chocloate-1.jpg" alt="Restaurant" />
+            <div class="circle-image">
+              <img src="assets/sugar.png" alt="Logo" />
+            </div>
+
+            <div class="res-heart-btn">♡</div>
+          </div>
+          <div class="res-content">
+            <div class="res-title">
+              Feeling Sugar
+              <span class="res-rating">★ 4.5</span>
+            </div>
+            <div class="res-subtitle">Chinese, Mongolian, Noodles, Soup</div>
+            <div class="res-info">
+              <span>24-34 min</span>
+              <span>1.4 km</span>
+              <span>KD 1.00</span>
+            </div>
+            <span class="res-discount">40% off on orders above KD 4.00</span>
+          </div>
+        </div>
+
+        <!-- Closed Restaurant with Preorder -->
+        <div class="res-card">
+          <div class="res-image">
+            <img src="assets/chocolat-2.jpg" alt="Restaurant" />
+            <div class="circle-image">
+              <img src="assets/blere.png" alt="Logo" />
+            </div>
+            <div class="res-heart-btn">♡</div>
+          </div>
+          <div class="res-content">
+            <div class="res-title">
+              The Bakery Blere
+              <span class="res-rating">★ 4.5</span>
+            </div>
+            <div class="res-subtitle">Chinese, Mongolian, Noodles, Soup</div>
+            <div class="res-info">
+              <span>24-34 min</span>
+              <span>1.4 km</span>
+              <span>KD 1.00</span>
+            </div>
+            <span class="res-discount">40% off on orders above KD 4.00</span>
+          </div>
+        </div>
+        <!-- Open Restaurant -->
+        <div class="res-card">
+          <div class="res-image">
+            <img src="assets/chocloate-1.jpg" alt="Restaurant" />
+            <div class="circle-image">
+              <img src="assets/tamra.png" alt="Logo" />
+            </div>
+            <div class="res-heart-btn">♡</div>
+          </div>
+          <div class="res-content">
+            <div class="res-title">
+              Feeling Sugar
+              <span class="res-rating">★ 4.5</span>
+            </div>
+            <div class="res-subtitle">Chinese, Mongolian, Noodles, Soup</div>
+            <div class="res-info">
+              <span>24-34 min</span>
+              <span>1.4 km</span>
+              <span>KD 1.00</span>
+            </div>
+            <span class="res-discount">40% off on orders above KD 4.00</span>
+          </div>
+        </div>
+
+        <!-- Another Open Restaurant -->
+        <div class="res-card">
+          <div class="res-image">
+            <img src="assets/chocolat-2.jpg" alt="Restaurant" />
+            <div class="circle-image">
+              <img src="assets/sugar.png" alt="Logo" />
+            </div>
+            <div class="res-heart-btn">♡</div>
+          </div>
+          <div class="res-content">
+            <div class="res-title">
+              Ookie Cookie
+              <span class="res-rating">★ 4.5</span>
+            </div>
+            <div class="res-subtitle">Chinese, Mongolian, Noodles, Soup</div>
+            <div class="res-info">
+              <span>24-34 min</span>
+              <span>1.4 km</span>
+              <span>KD 1.00</span>
+            </div>
+            <span class="res-discount">40% off on orders above KD 4.00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-section">
+      <!-- Left Side -->
+      <div class="app-content">
+        <h2>Mobile App</h2>
+        <p>
+          Download the ZWARA app on your mobile device for a more convenient and
+          efficient ordering and delivery experience
+        </p>
+        <div class="store-buttons">
+          <img
+            src="assets/appstore-logo.png"
+            alt="App Store"
+            alt="App Store"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+            alt="Google Play"
+          />
+        </div>
+      </div>
+
+      <!-- Right Side with Mockups -->
+      <div class="app-mockups">
+        <!-- <img src="assets/frame-1.png" alt="App Screenshot Left" />
+        <img src="assets/frame-2.png" alt="App Screenshot Right" /> -->
+        <img src="assets/bottom-banner.png" alt="bootom-banner" />
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <!-- Popular -->
+        <div class="footer-column">
+          <h4>POPULAR</h4>
+          <ul>
+            <li><a href="#">Healthy</a></li>
+            <li><a href="#">Milk Shake</a></li>
+            <li><a href="#">Cheesecake</a></li>
+            <li><a href="#">Frozen Yoghurt</a></li>
+            <li><a href="#">Waffle</a></li>
+            <li><a href="#">Coffee</a></li>
+            <li><a href="#">Arabic Sweet</a></li>
+          </ul>
+        </div>
+
+        <!-- Explore -->
+        <div class="footer-column">
+          <h4>EXPLORE</h4>
+          <ul>
+            <li><a href="#">Influencer</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Newly Added</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Trends</a></li>
+            <li><a href="#">Ya Hala</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Account -->
+        <div class="footer-column">
+          <h4>CUSTOMER ACCOUNT</h4>
+          <ul>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Gifts</a></li>
+            <li><a href="#">Invite Friends</a></li>
+            <li><a href="#">Favourites</a></li>
+            <li><a href="#">Addresses</a></li>
+            <li><a href="#">My Loyalty</a></li>
+            <li><a href="#">Zwara Credits</a></li>
+          </ul>
+        </div>
+
+        <!-- Help & Support -->
+        <div class="footer-column">
+          <h4>HELP & SUPPORT</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Faq's</a></li>
+            <li><a href="#">How to Order</a></li>
+            <li><a href="#">Privacy Statement</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Data Deletion Policy</a></li>
+            <li><a href="#">Feedback</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="footer-column">
+          <h4>CONTACT US</h4>
+          <p>Whatsapp Us: +965 869878955</p>
+          <p>Call Us On: +965 869878955</p>
+          <p>Email: @zwara.com</p>
+          <p>8:00 AM to 8:00 PM, 365 days</p>
+          <br />
+          <p>
+            Should you encounter any bugs,<br />
+            delayed deliveries, or other<br />
+            problems on the website.
+          </p>
+        </div>
+
+        <!-- Download App -->
+        <div class="footer-column download-app">
+          <h4>DOWNLOAD THE APP</h4>
+          <a href="#"
+            ><img
+              src="assets/appstore-logo.png"
+              alt="App Store"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+              alt="Google Play"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <img src="assets/Zwara-logo.png" alt="Zwara Logo" />
+          <span class="copyright">© 2025. All Rights Reserved.</span>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-apple"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
