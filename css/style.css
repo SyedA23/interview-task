@@ -361,7 +361,7 @@ body {
 }
 
 .res-heart-btn.active {
-  color: #e91e63; /* pink when active */
+  color: #e91e63; 
 }
 
 /* Closed Overlay */
@@ -565,7 +565,7 @@ body {
 .influencers-section,
 .chocolate-section {
   position: relative;
-  background-color: #fde6ed; /* light pink background */
+  background-color: #fde6ed; 
   padding: 40px 80px;
 }
 
@@ -580,7 +580,6 @@ body {
   width: 60px;
   height: 25px;
   background: #fff;
-  /* clip-path: polygon(50% 0, 0 100%, 100% 100%); */
   clip-path: polygon(
     0 0,
     100% 0,
@@ -625,11 +624,6 @@ body {
   font-size: 14px;
   font-weight: 600;
 }
-/* .influencer-card p {
-  margin: 10px 0;
-  font-size: 14px;
-  font-weight: 500;
-} */
 
 /* Navigation arrows */
 .arrows {
@@ -690,19 +684,6 @@ body {
   margin: 50px;
 }
 
-/* .app-section::after {
-  content: "Z";
-  position: absolute;
-  right: 40px;
-  bottom: 30px;
-  font-size: 200px;
-  font-weight: 800;
-  color: #d32f55;
-  opacity: 0.08;
-  line-height: 1;
-  z-index: 0;
-} */
-
 .app-content {
   flex: 1;
   max-width: 40%;
@@ -737,14 +718,6 @@ body {
   transform: scale(1.05);
 }
 
-/* .app-mockups {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  z-index: 1;
-} */
-
 .app-mockups img {
   height: 350px;
   position: absolute;
@@ -753,18 +726,6 @@ body {
   transition: transform 0.3s ease;
   filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.15));
 }
-
-/* .app-mockups img:first-child {
-  transform: rotate(-10deg);
-}
-
-.app-mockups img:last-child {
-  transform: rotate(10deg);
-} */
-
-/* .app-mockups img:hover {
-  transform: scale(1.05);
-} */
 
 @media (max-width: 900px) {
   .app-section {
@@ -906,5 +867,61 @@ footer {
 
   .copyright {
     font-size: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 20px;
+  }
+
+  .location,
+  .search {
+    min-width: 50%;
+  }
+  food-right {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 150px;
+  }
+}
+
+/* Hamburger menu - hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 250px;
+    flex-direction: column;
+    padding: 50px 20px;
+    gap: 10px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 1100;
   }
 }
