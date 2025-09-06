@@ -873,6 +873,26 @@ footer {
     font-size: 20px;
   }
 
+  .food-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .influencers-section h2,
+  .chocolate-section h2,
+  .res-section h2 {
+    font-size: 18px;
+  }
+
+  .res-arrows,
+  .arrows {
+    display: none;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
   .location,
   .search {
     min-width: 50%;
