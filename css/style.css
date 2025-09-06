@@ -361,7 +361,7 @@ body {
 }
 
 .res-heart-btn.active {
-  color: #e91e63; 
+  color: #e91e63;
 }
 
 /* Closed Overlay */
@@ -565,7 +565,7 @@ body {
 .influencers-section,
 .chocolate-section {
   position: relative;
-  background-color: #fde6ed; 
+  background-color: #fde6ed;
   padding: 40px 80px;
 }
 
@@ -882,6 +882,10 @@ footer {
     right: 0;
     top: 40px;
     width: 150px;
+  }
+
+  .logo img {
+    height: 24px;
   }
 }
 
